@@ -1,3 +1,4 @@
+/*
 function math(num1, num2) {
     // Write your code below this line
         num1+=1;
@@ -29,7 +30,8 @@ math (0,4)
 //6
 math(4,0)
 
-/*function math(num1, num2) {
+
+function math(num1, num2) {
     // Write your code below this line
         num1+=1;
         num2-= 1;
@@ -59,7 +61,7 @@ math(-2,0)
 math (0,4)
 //6
 math(4,0)
-*/
+
 function evenOdd(number) {
     // Write your code below this line
     switch (number){
@@ -97,4 +99,23 @@ function evenOdd(number) {
 }
 evenOdd(5)
 return('hi')
+*/
+function digits(num) {
+    // Write your code below this line
+    let digit= 1;
 
+    while(num >10 ){
+        num=Math.round(num/=10)
+        digit++
+        
+        console.log (num)
+        console.log(digit)
+        
+    }
+        
+        
+
+    
+    
+}
+digits(34909)
