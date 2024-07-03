@@ -99,7 +99,7 @@ function evenOdd(number) {
 }
 evenOdd(5)
 return('hi')
-*/
+
 function digits(num) {
     // Write your code below this line
     let digit= 1;
@@ -119,3 +119,18 @@ function digits(num) {
     
 }
 digits(34909)
+*/
+function printer(num) {
+    // Write your code below this line
+
+       do{ 
+        console.log(num)
+        num --;
+    
+       }while (num > 0){
+        
+       }
+      
+}
+
+printer(7)
