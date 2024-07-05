@@ -157,7 +157,7 @@ function evenSum(number) {
     console.log(total)
 }
 evenSum(100)
-*/
+
 function printer(numbers) {
     // Write your code below this line
     for (let i =numbers.length-5;i<numbers.length;i++){
@@ -167,3 +167,22 @@ function printer(numbers) {
     
 }
 printer([1, 2, 3, 4, 5, 6, 7,5,2,8,1])
+You are given two arrays, nums1 and nums2. 
+Your job is to get the last element of nums1 and 
+insert it as the first element of nums2. 
+Remove the last element of nums1. Print nums1, 
+then print nums2.
+*/
+
+function elSwap(nums1, nums2) {
+    // Write your code below this line
+    
+        let lastElement = nums1[nums1.length-1]
+        let firstElement = nums2[0]
+        nums1.pop();
+        nums2.unshift(lastElement)
+        console.log(nums1)
+        console.log(nums2)
+    
+}
+elSwap([2, 5, 6, 1],[6, 7, 2, 8, 2])
