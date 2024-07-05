@@ -144,7 +144,7 @@ number is even. If you get stuck, Hint 1 will help you
 with the math.
 
 
-*/
+
 function evenSum(number) {
     // Write your code below this line
     let total = 0;
@@ -157,3 +157,13 @@ function evenSum(number) {
     console.log(total)
 }
 evenSum(100)
+*/
+function printer(numbers) {
+    // Write your code below this line
+    for (let i =numbers.length-5;i<numbers.length;i++){
+        console.log(numbers[i])
+        //console.log(theFirstNo)
+    }
+    
+}
+printer([1, 2, 3, 4, 5, 6, 7,5,2,8,1])
