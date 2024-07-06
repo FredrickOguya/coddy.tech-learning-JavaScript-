@@ -172,7 +172,7 @@ Your job is to get the last element of nums1 and
 insert it as the first element of nums2. 
 Remove the last element of nums1. Print nums1, 
 then print nums2.
-*/
+
 
 function elSwap(nums1, nums2) {
     // Write your code below this line
@@ -186,3 +186,44 @@ function elSwap(nums1, nums2) {
     
 }
 elSwap([2, 5, 6, 1],[6, 7, 2, 8, 2])
+const unionArr = [];
+
+for (/* Looping through first array ) {
+    
+    // Use the .includes() method and the NOT boolean operator for the condition in the if statement below
+    if (/* unionArr doesn't include current element) {
+        // Add current element to unionArr
+    }
+}
+
+for (/* Looping through second array ) {
+    
+    if (/* unionArr doesn't include current element) {
+        // Add current element to unionArr
+    }
+    
+}
+
+console.log(unionArr);
+*/
+function union(arr1, arr2) {
+    // Write your code below this line
+    let differntElements=[];
+    
+    for (let i=0;i<arr1.length;i++){
+       
+        if (!differntElements.includes(arr1[i])){
+             differntElements.push(arr1[i])
+           
+        }
+    }
+    for(let i= 0;i<arr2.length;i++){
+        if(!differntElements.includes(arr2[i])){
+            differntElements.push(arr2[i])
+        }
+    }
+    
+   console.log(differntElements)
+}
+
+union([2, 5, 3, 6,],[1, 2, 3, 7])
