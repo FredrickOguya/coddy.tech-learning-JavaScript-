@@ -279,7 +279,7 @@ Hints
 
 Hint 1
 
-*/
+
 function validateCard(cardnumber){
     let cardnumberStr = cardnumber.toString();
     let sum =''
@@ -321,3 +321,46 @@ function validateCard(cardnumber){
     }
 }
 validateCard(5418878773156819)
+*/
+
+function substitution(key, message) {
+    // Write your code below this line
+    let capitalLetterArrayPosition = [];
+    let capitalLetterArray = []
+    let lowerCaseLetterArray = [];
+    let lowerCaseLetterPosition = [];
+    let charactersArrayPosition = [];
+    let characterArray = [];
+    let upperCaseAlphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    let lowerCaseAlphabets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    let characters = [',',' ','!'];
+    for(let i=0;i<key.length;i++){
+        
+    }
+    for (let j=0;j<message.length;j++){
+        if(characters.includes(message[j])){
+            characterArray+=message[j]
+            charactersArrayPosition+=j
+        }else if (message[j]===message[j].toUpperCase() && !characterArray.includes(message[j])){
+            capitalLetterArray+=message[j];
+            capitalLetterArrayPosition+=j
+        }else{
+            lowerCaseLetterArray+=message[j]
+            lowerCaseLetterPosition+=j
+        }
+        for (let k=0;k<capitalLetterArray.length;k++){
+        if(message[j]===capitalLetterArray[k]){
+            console.log(capitalLetterArray[k])
+        }
+    }
+    }
+    console.log(message)
+    console.log(characterArray)
+    console.log(characterArray.length)
+    console.log(charactersArrayPosition)
+    console.log(capitalLetterArray)
+    console.log(lowerCaseLetterArray)
+    console.log(capitalLetterArrayPosition)
+    console.log(lowerCaseLetterPosition)
+}
+substitution(['N', 'Q', 'X', 'P', 'O', 'M', 'A', 'F', 'T', 'R', 'H', 'L', 'Z', 'G', 'E', 'C', 'Y', 'J', 'I', 'U', 'W', 'S', 'K', 'D', 'V', 'B'],'Hello, World!')
