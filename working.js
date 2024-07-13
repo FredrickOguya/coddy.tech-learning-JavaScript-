@@ -325,42 +325,61 @@ validateCard(5418878773156819)
 
 function substitution(key, message) {
     // Write your code below this line
-    let capitalLetterArrayPosition = [];
-    let capitalLetterArray = []
+    let UpperCaseArrayPosition = [];
+    let lowerCaseArrayPosition = [];
+    let UpperCaseArray = []
+    let lowerCaseArray =[];
     let lowerCaseLetterArray = [];
     let lowerCaseLetterPosition = [];
     let charactersArrayPosition = [];
     let characterArray = [];
     let upperCaseAlphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    let newUpperCaseArray = [];
+    let newLowerCaseArray = [];
     let lowerCaseAlphabets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-    let characters = [',',' ','!'];
-    for(let i=0;i<key.length;i++){
-        
-    }
+    let solution = [];
+    let messageArray = message.split('')
+    
     for (let j=0;j<message.length;j++){
-        if(characters.includes(message[j])){
+        if(message[j]>= "a" && message[j]<="z"){
+            lowerCaseArray+=message[j]
+            lowerCaseArrayPosition.push(j)
+        }else if (message[j]>= "A" && message[j]<="Z"){
+            UpperCaseArray+=message[j];
+            UpperCaseArrayPosition+=j
+        }else{
+
             characterArray+=message[j]
             charactersArrayPosition+=j
-        }else if (message[j]===message[j].toUpperCase() && !characterArray.includes(message[j])){
-            capitalLetterArray+=message[j];
-            capitalLetterArrayPosition+=j
-        }else{
-            lowerCaseLetterArray+=message[j]
-            lowerCaseLetterPosition+=j
+            
         }
-        for (let k=0;k<capitalLetterArray.length;k++){
-        if(message[j]===capitalLetterArray[k]){
-            console.log(capitalLetterArray[k])
+        for (let k=0;k<upperCaseAlphabets.length;k++){
+            if(message[j]===upperCaseAlphabets[k]){
+                newUpperCaseArray+=key.at(k)
+            }
+        }
+        for (let l=0;l<lowerCaseAlphabets.length;l++){
+            if(message[j] === lowerCaseAlphabets[l]){
+                newLowerCaseArray += key.at(l).toLowerCase()
+            }
         }
     }
+    for (let m = 0;m<UpperCaseArrayPosition.length;m++){
+        for(let n=0;n<newUpperCaseArray.length;n++){
+            if (m===n){
+                messageArray.splice(UpperCaseArrayPosition[m],1,newUpperCaseArray[n])
+            }
+        }
     }
-    console.log(message)
-    console.log(characterArray)
-    console.log(characterArray.length)
-    console.log(charactersArrayPosition)
-    console.log(capitalLetterArray)
-    console.log(lowerCaseLetterArray)
-    console.log(capitalLetterArrayPosition)
-    console.log(lowerCaseLetterPosition)
+    for (let p = 0;p<lowerCaseArrayPosition.length;p++){
+        for(let q=0;q<newLowerCaseArray.length;q++){
+            if (p===q){
+                messageArray.splice(lowerCaseArrayPosition[p],1,newLowerCaseArray[q])
+            }
+        }
+    }
+    let answer = messageArray.join('')
+    
+    console.log(answer)
 }
 substitution(['N', 'Q', 'X', 'P', 'O', 'M', 'A', 'F', 'T', 'R', 'H', 'L', 'Z', 'G', 'E', 'C', 'Y', 'J', 'I', 'U', 'W', 'S', 'K', 'D', 'V', 'B'],'Hello, World!')
