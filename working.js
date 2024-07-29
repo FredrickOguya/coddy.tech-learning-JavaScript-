@@ -321,7 +321,7 @@ function validateCard(cardnumber){
     }
 }
 validateCard(5418878773156819)
-*/
+
 
 function substitution(key, message) {
     // Write your code below this line
@@ -383,3 +383,18 @@ function substitution(key, message) {
     console.log(answer)
 }
 substitution(['N', 'Q', 'X', 'P', 'O', 'M', 'A', 'F', 'T', 'R', 'H', 'L', 'Z', 'G', 'E', 'C', 'Y', 'J', 'I', 'U', 'W', 'S', 'K', 'D', 'V', 'B'],'Hello, World!')
+*/
+var twoSum = function(nums, target) {
+    let solution =[]
+   for (let i=0;i<nums.length;i++){
+        for(let j=0;j<nums.length;j++){
+            if(nums[j]+nums[i]===target&& nums[i]!==nums[j]){
+                solution.push(j)
+            }
+        }
+    }
+   
+     return solution
+};
+
+console.log(twoSum([3,2,4],6))
