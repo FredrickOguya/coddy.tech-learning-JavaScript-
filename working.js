@@ -383,7 +383,7 @@ function substitution(key, message) {
     console.log(answer)
 }
 substitution(['N', 'Q', 'X', 'P', 'O', 'M', 'A', 'F', 'T', 'R', 'H', 'L', 'Z', 'G', 'E', 'C', 'Y', 'J', 'I', 'U', 'W', 'S', 'K', 'D', 'V', 'B'],'Hello, World!')
-*/
+
 var twoSum = function(nums, target) {
     let solution =[]
    for (let i=0;i<nums.length;i++){
@@ -398,3 +398,15 @@ var twoSum = function(nums, target) {
 };
 
 console.log(twoSum([3,2,4],6))
+*/
+function preparePicnicBasket(currentItems, itemsToAdd) {
+    // Write code here
+    let number = 0;
+    for(let i =0;i<itemsToAdd;i++){
+        number+=1
+        currentItems += ` item${number}`
+    }
+    return currentItems
+}
+console.log(preparePicnicBasket('meat beans',4))
+ 
