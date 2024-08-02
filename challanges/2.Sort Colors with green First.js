@@ -57,7 +57,7 @@ function calculateSquare (num){
     }
 }
 console.log(isEven(8))
-   */
+   
 function calculateWithTax(product) {
     let price = product.price;
     let taxRate = product.taxRate;
@@ -67,3 +67,16 @@ function calculateWithTax(product) {
    }
    return calculateTaxAmount(price,taxRate)+price
 }
+*/
+// Write code here
+function formatNumber(number){
+    function formatWithTwoDecimals(){
+        return number.toFixed(2)
+    }
+    return formatWithTwoDecimals;
+}
+
+
+// Don't change below
+const res = formatNumber(10.5687) // res is function
+console.log(res())
