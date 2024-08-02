@@ -17,7 +17,7 @@ Examples:
 sortColors(["blue", "red", "yellow"]) => ["blue", "red", "yellow"]
 sortColors(["blue", "green", "red"]) => ["green", "blue", "red"]
 sortColors(["purple", "orange", "green", "cyan"]) => ["green", "cyan", "orange", "purple"]
-*/
+
 function sortColors(colors) {
     
     // Write code here
@@ -38,3 +38,14 @@ function sortColors(colors) {
     console.log(sortedArray)
 }
 sortColors(['red', 'orange', 'yellow', 'green', 'green', 'blue', 'indigo', 'violet'])
+
+let userAge = 24
+function celebrateBirthday(){
+    return userAge+1
+}
+console.log(celebrateBirthday())
+*/
+function calculateSquare (num){
+    return num*num
+   }
+   console.log(calculateSquare(4))
