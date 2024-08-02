@@ -49,7 +49,6 @@ function calculateSquare (num){
     return num*num
    }
    console.log(calculateSquare(4))
-   */
    function isEven(num){
     if (num%2===1){
         return false
@@ -58,3 +57,13 @@ function calculateSquare (num){
     }
 }
 console.log(isEven(8))
+   */
+function calculateWithTax(product) {
+    let price = product.price;
+    let taxRate = product.taxRate;
+   // write code here
+   function calculateTaxAmount(price,taxRate){
+    return price*taxRate
+   }
+   return calculateTaxAmount(price,taxRate)+price
+}
