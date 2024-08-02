@@ -44,8 +44,17 @@ function celebrateBirthday(){
     return userAge+1
 }
 console.log(celebrateBirthday())
-*/
+
 function calculateSquare (num){
     return num*num
    }
    console.log(calculateSquare(4))
+   */
+   function isEven(num){
+    if (num%2===1){
+        return false
+    }else{
+        return true
+    }
+}
+console.log(isEven(8))
