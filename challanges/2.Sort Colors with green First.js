@@ -67,7 +67,7 @@ function calculateWithTax(product) {
    }
    return calculateTaxAmount(price,taxRate)+price
 }
-*/
+
 // Write code here
 function formatNumber(number){
     function formatWithTwoDecimals(){
@@ -80,3 +80,12 @@ function formatNumber(number){
 // Don't change below
 const res = formatNumber(10.5687) // res is function
 console.log(res())
+*/
+const findLargest =(numbers)=> {
+    for (let i=0;i<numbers.length;i++){
+        if (numbers[i]>numbers[i-1]){
+            return numbers[i]
+        }
+    }
+}
+console.log(findLargest([3, 8, 1, 10, 4]))
