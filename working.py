@@ -100,10 +100,14 @@ def whatToBuy(price,quantity,totalPrice,constructionItems):
 
 
 
-whatToBuy(
-[5, 2, 9, 3, 1, 2, 9],
-[1, 1, 1, 1, 6, 6, 6],
-0.5,
-['pencil', 'bottle', 'wallet', 'phone', 'toy', 'mouse', 'door']
-
-)
+whatToBuy([5, 2, 9, 3, 1, 2, 9],[1, 1, 1, 1, 6, 6, 6],0.5,['pencil', 'bottle', 'wallet', 'phone', 'toy', 'mouse', 'door'])
+const getGreeting = (hour) => {
+    hour = new Date().getHours
+    if (hour>6 && hour <11){
+        return "Good morning!"
+    }else if(hour>12 && hour<17){
+        return "Good afternoon!"
+    }else{
+        return "Good evining/night!"
+    }
+}
