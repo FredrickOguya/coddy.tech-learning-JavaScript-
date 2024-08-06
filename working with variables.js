@@ -12,7 +12,7 @@ function math(num1, num2) {
 
     
 }
-*/
+
 const getGreeting = (hour) => {
     
     console.log(new Date().getHours())
@@ -25,3 +25,7 @@ const getGreeting = (hour) => {
     }
 }
 console.log(getGreeting(10))
+*/
+let toCelcius = fahrenheit => ((5/9) *(fahrenheit - 32)).toFixed(2)
+
+console.log(toCelcius(8))
