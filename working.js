@@ -398,7 +398,7 @@ var twoSum = function(nums, target) {
 };
 
 console.log(twoSum([3,2,4],6))
-*/
+
 function preparePicnicBasket(currentItems, itemsToAdd) {
     // Write code here
     let number = 0;
@@ -409,4 +409,35 @@ function preparePicnicBasket(currentItems, itemsToAdd) {
     return currentItems
 }
 console.log(preparePicnicBasket('meat beans',4))
- 
+
+function findMissingNumber(arr) {
+    let n = arr.length + 1;
+    let xorSum = 0;
+
+    for (let i = 1; i <= n; i++) {
+        xorSum ^= i;
+    }
+
+    for (let num of arr) {
+        xorSum ^= num;
+    }
+
+    console.log(xorSum) ;
+}
+findMissingNumber([1, 2, 3, 4]) 
+
+function areAnagrams(str1, str2) {
+    // write your code below
+    let arr = str1.split('').sort().join('')
+    let arr2 = str2.split('').sort().join('')
+
+    return arr === arr2 ? true:false;
+}
+console.log(areAnagrams('night','thing'))
+
+function findMax(arr) {
+    // write your code below 
+    return Math.max(...arr)
+}
+console.log(findMax([3, 1, 4, 1, 5, 9, 2, 6]))
+*/
