@@ -440,7 +440,7 @@ function findMax(arr) {
     return Math.max(...arr)
 }
 console.log(findMax([3, 1, 4, 1, 5, 9, 2, 6]))
-*/
+
 function rotateArray(steps, arr) {
     // write your code below
     let removed = arr.slice(0,steps)
@@ -450,3 +450,12 @@ function rotateArray(steps, arr) {
 }
 
 console.log(rotateArray(2,[1,2,3,4,5]))
+*/
+function findMedianSortedArrays(nums1, nums2) {
+    // write your code below 
+    let both = [...nums1,...nums2].sort((a,b)=>a-b);
+  
+    return both%2===1 ? both[Math.floor(both.length/2)] : (both[(both.length/2)-1]+both[both.length/2])/2
+
+}
+console.log(findMedianSortedArrays([2, 4, 6],[1, 3, 5]))
