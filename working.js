@@ -458,7 +458,7 @@ function findMedianSortedArrays(nums1, nums2) {
 
 }
 console.log(findMedianSortedArrays([2, 4, 6],[1, 3, 5]))
-*/
+
 function gcd(a, b) {
     // write your code below
     let dividers= []
@@ -471,3 +471,19 @@ function gcd(a, b) {
     return Math.max(...dividers)
 }
 console.log(gcd(12,18))
+*/
+function fizzBuzz(n) {
+    // write your code below
+    for (let i = 1;i<n;i++){
+         if(i%3===0&&i%5===0){
+            console.log('FizzBuzz')
+        }else if(i%3===0){
+            console.log('Fizz')
+        }else if(i%5===0){
+            console.log('Buzz')
+        }else{
+            console.log(i)
+        }
+    }
+}
+fizzBuzz(20)
