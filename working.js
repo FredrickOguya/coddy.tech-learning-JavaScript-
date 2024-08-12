@@ -450,7 +450,6 @@ function rotateArray(steps, arr) {
 }
 
 console.log(rotateArray(2,[1,2,3,4,5]))
-*/
 function findMedianSortedArrays(nums1, nums2) {
     // write your code below 
     let both = [...nums1,...nums2].sort((a,b)=>a-b);
@@ -459,3 +458,16 @@ function findMedianSortedArrays(nums1, nums2) {
 
 }
 console.log(findMedianSortedArrays([2, 4, 6],[1, 3, 5]))
+*/
+function gcd(a, b) {
+    // write your code below
+    let dividers= []
+    for(let i=1;i<a;i++){
+        if(a%i===0 && a%i ===0){
+            dividers.push(i)
+        }
+    }
+    
+    return Math.max(...dividers)
+}
+console.log(gcd(12,18))
