@@ -441,3 +441,12 @@ function findMax(arr) {
 }
 console.log(findMax([3, 1, 4, 1, 5, 9, 2, 6]))
 */
+function rotateArray(steps, arr) {
+    // write your code below
+    let removed = arr.slice(0,steps)
+    let afterRe = arr.slice(steps)
+    let result = [...afterRe,...removed]
+    return result
+}
+
+console.log(rotateArray(2,[1,2,3,4,5]))
