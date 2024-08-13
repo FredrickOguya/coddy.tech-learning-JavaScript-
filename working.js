@@ -487,17 +487,25 @@ function fizzBuzz(n) {
     }
 }
 fizzBuzz(20)
-*/
+
 function twoSum(arr, target) {
     // write your code below 
     let conc = [];
-    for(let i=0;i<arr.length;i++){
-        for(let j=0;j<arr.length;j++){
-            if(arr[j]+arr[i]===target){
-                conc.push(arr[j])
+    for (let i= 0;i<arr.length;i++){
+        for(let j=1;j<arr.length;j++){
+            if(arr[i]+arr[j]===target){
+                return[i,j]
             }
         }
+        
     }
-    return conc;
+    
 }
-console.log(twoSum([2, 7, 11, 15],9))
+console.log(twoSum([8, 12, 5, 2, 10, 17],15))
+*/
+function isValidEmail(email) {
+    // write your code below 
+    const emailPattern = /^[a-zA-Z0-9,_%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z{2,}$]/
+    return emailPattern.test(email);
+}
+console.log(isValidEmail("fredfrick@oguya.com"))
