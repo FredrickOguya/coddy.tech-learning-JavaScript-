@@ -528,8 +528,25 @@ function countWords(sentence) {
     return num;
 }
 console.log(countWords("Hello, how are you today?"))
-*/
+
 function reverseInteger(num){
     return Number(num.toString().split(``).reverse().join(``))
 }
 console.log(reverseInteger(1234))
+*/
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */
+var mergeTwoLists = function(list1, list2) {
+    return [...list1,...list2].sort()
+};
+console.log(mergeTwoLists([1,2,3],[2,5,6]))
