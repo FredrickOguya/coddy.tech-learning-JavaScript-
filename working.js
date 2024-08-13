@@ -540,13 +540,25 @@ console.log(reverseInteger(1234))
  *     this.val = (val===undefined ? 0 : val)
  *     this.next = (next===undefined ? null : next)
  * }
- */
+
 /**
  * @param {ListNode} list1
  * @param {ListNode} list2
  * @return {ListNode}
- */
 var mergeTwoLists = function(list1, list2) {
     return [...list1,...list2].sort()
 };
 console.log(mergeTwoLists([1,2,3],[2,5,6]))
+ */
+var removeDuplicates = function(nums) {
+    let result = [];
+    for(let i=0;i<nums.length;i++){
+        if(result.includes(nums[i])){
+            continue;
+        } else {
+            result.push(nums[i])
+        }
+    }
+    return result;
+};
+console.log(removeDuplicates([2,3,6,3,8,0,9,1,4,1,3]))
