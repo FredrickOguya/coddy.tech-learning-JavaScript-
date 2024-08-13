@@ -502,10 +502,20 @@ function twoSum(arr, target) {
     
 }
 console.log(twoSum([8, 12, 5, 2, 10, 17],15))
-*/
+
 function isValidEmail(email) {
     // write your code below 
     const emailPattern = /^[a-zA-Z0-9,_%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z{2,}$]/
     return emailPattern.test(email);
 }
 console.log(isValidEmail("fredfrick@oguya.com"))
+*/
+function countCharacters(str) {
+    // write your code below
+    let obje = {}
+    for(char of str){
+        obje[char]=(obje[char]||0)+1
+    }
+    return obje
+}
+console.log(countCharacters('programming'))
