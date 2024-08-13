@@ -519,7 +519,7 @@ function countCharacters(str) {
     return obje
 }
 console.log(countCharacters('programming'))
-*/
+
 function countWords(sentence) {
     // write your code below 
     let arr = sentence.split(` `)
@@ -528,3 +528,8 @@ function countWords(sentence) {
     return num;
 }
 console.log(countWords("Hello, how are you today?"))
+*/
+function reverseInteger(num){
+    return Number(num.toString().split(``).reverse().join(``))
+}
+console.log(reverseInteger(1234))
