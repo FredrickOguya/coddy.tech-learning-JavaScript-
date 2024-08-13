@@ -471,7 +471,7 @@ function gcd(a, b) {
     return Math.max(...dividers)
 }
 console.log(gcd(12,18))
-*/
+
 function fizzBuzz(n) {
     // write your code below
     for (let i = 1;i<n;i++){
@@ -487,3 +487,17 @@ function fizzBuzz(n) {
     }
 }
 fizzBuzz(20)
+*/
+function twoSum(arr, target) {
+    // write your code below 
+    let conc = [];
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr.length;j++){
+            if(arr[j]+arr[i]===target){
+                conc.push(arr[j])
+            }
+        }
+    }
+    return conc;
+}
+console.log(twoSum([2, 7, 11, 15],9))
