@@ -509,7 +509,7 @@ function isValidEmail(email) {
     return emailPattern.test(email);
 }
 console.log(isValidEmail("fredfrick@oguya.com"))
-*/
+
 function countCharacters(str) {
     // write your code below
     let obje = {}
@@ -519,3 +519,12 @@ function countCharacters(str) {
     return obje
 }
 console.log(countCharacters('programming'))
+*/
+function countWords(sentence) {
+    // write your code below 
+    let arr = sentence.split(` `)
+    let num = 0;
+    arr.forEach(word=>num+=1)
+    return num;
+}
+console.log(countWords("Hello, how are you today?"))
