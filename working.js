@@ -549,7 +549,7 @@ var mergeTwoLists = function(list1, list2) {
     return [...list1,...list2].sort()
 };
 console.log(mergeTwoLists([1,2,3],[2,5,6]))
- */
+
 var removeDuplicates = function(nums) {
     let result = [];
     for(let i=0;i<nums.length;i++){
@@ -561,4 +561,11 @@ var removeDuplicates = function(nums) {
     }
     return result;
 };
-console.log(removeDuplicates([2,3,6,3,8,0,9,1,4,1,3]))
+console.log(removeDuplicates([2,3,6,3,8,0,9,1,4,1,3])) 
+*/
+var lengthOfLastWord = function(s) {
+
+    let result = s.split(` `)[s.split(` `).length-1].length
+    return result
+};
+console.log(lengthOfLastWord('i jdnfo dknvokdkjf dkvnownf too'))
