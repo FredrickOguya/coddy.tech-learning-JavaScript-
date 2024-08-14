@@ -569,9 +569,18 @@ var lengthOfLastWord = function(s) {
     return result
 };
 console.log(lengthOfLastWord('i jdnfo dknvokdkjf dkvnownf too'))
-*/
+
 function capitalize(s) {
     // Write code here
      return s.split(` `).map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(` `)
 }
 console.log(capitalize(`this is an example`))
+*/
+function fibo (n){
+    let fibo = [0,1];
+    for (let i=2;i<n;i++){
+        fibo.push(fibo[i-1]+(fibo[i-2])) 
+    }
+    return fibo[7]
+}
+console.log(fibo(13))
