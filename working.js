@@ -562,10 +562,16 @@ var removeDuplicates = function(nums) {
     return result;
 };
 console.log(removeDuplicates([2,3,6,3,8,0,9,1,4,1,3])) 
-*/
+
 var lengthOfLastWord = function(s) {
 
     let result = s.split(` `)[s.split(` `).length-1].length
     return result
 };
 console.log(lengthOfLastWord('i jdnfo dknvokdkjf dkvnownf too'))
+*/
+function capitalize(s) {
+    // Write code here
+     return s.split(` `).map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(` `)
+}
+console.log(capitalize(`this is an example`))
