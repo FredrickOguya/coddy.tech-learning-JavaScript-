@@ -575,7 +575,7 @@ function capitalize(s) {
      return s.split(` `).map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(` `)
 }
 console.log(capitalize(`this is an example`))
-*/
+
 function fibo (n){
     let fibo = [0,1];
     for (let i=2;i<n;i++){
@@ -584,3 +584,15 @@ function fibo (n){
     return fibo[7]
 }
 console.log(fibo(13))
+*/
+function isPrime(num){
+    let divi = []
+    for (let i=2;i<num;i++){
+        
+        if(num%i===0){
+            divi.push(i)
+        }
+    }
+    return divi.length===0?true:false
+}
+console.log(isPrime(30))
