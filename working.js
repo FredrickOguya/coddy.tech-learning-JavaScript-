@@ -607,7 +607,7 @@ function fact(num) {
     return sol
 }
 console.log(fact(6))
-*/
+
 function alternate(a1, a2) {
     // Write code here
     let resulting = []
@@ -618,3 +618,10 @@ function alternate(a1, a2) {
     return resulting
 }
 console.log(alternate([1, 2, 3],[4, 5, 6]))
+*/
+function rotate(arr) {
+    // Write code here
+   
+    return arr.unshift(arr.pop())
+}
+console.log(rotate([1,2,3]))
