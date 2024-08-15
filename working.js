@@ -584,7 +584,7 @@ function fibo (n){
     return fibo[7]
 }
 console.log(fibo(13))
-*/
+
 function isPrime(num){
     let divi = []
     for (let i=2;i<num;i++){
@@ -596,3 +596,15 @@ function isPrime(num){
     return divi.length===0?true:false
 }
 console.log(isPrime(30))
+
+function fact(num) {
+    // Write code here
+    let sol = num;
+
+    for(let i=1;i<num;i++){
+        sol*=i
+    }
+    return sol
+}
+console.log(fact(6))
+*/
