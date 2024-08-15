@@ -608,3 +608,13 @@ function fact(num) {
 }
 console.log(fact(6))
 */
+function alternate(a1, a2) {
+    // Write code here
+    let resulting = []
+
+    for(let i=0;i<a1.length;i++){
+        resulting.push(a1[i],a2[i])
+    }
+    return resulting
+}
+console.log(alternate([1, 2, 3],[4, 5, 6]))
